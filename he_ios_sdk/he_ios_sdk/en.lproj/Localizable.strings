@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  he_ios_sdk
+
+  Created by nikola on 11/20/18.
+  Copyright © 2018 hyperether. All rights reserved.
+*/
+
+//CameraViewController strings
+"alert.title" = "Alert";
+"alert.message" = "Camera not responding";
+"btn.title" = "OK";
+
+"alert.take.photo.title" = "Add Cover Photo";
+"alert.take.photo" = "Take Photo";
+"share.photo.title" = "Photo Library";
+"action.cancel" = "Cancel";
