@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872A8D9121A4B1CF00060EAA /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872A8D9021A4B1CF00060EAA /* BasicEditViewController.swift */; };
+		872A8D9321A4B1D600060EAA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872A8D9221A4B1D600060EAA /* CameraViewController.swift */; };
 		872FC51821A4154A00E020ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 872FC51A21A4154A00E020ED /* Localizable.strings */; };
 		8773954521A31A70000B032A /* he_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 8773954321A31A70000B032A /* he_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8773955021A31D89000B032A /* NSNotification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773954F21A31D89000B032A /* NSNotification.Name.swift */; };
-		87B8221021A49D17001FFD80 /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773954C21A31CB4000B032A /* BasicEditViewController.swift */; };
-		87BF634621A33175006554A7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF634521A33175006554A7 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		872A8D9021A4B1CF00060EAA /* BasicEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicEditViewController.swift; sourceTree = "<group>"; };
+		872A8D9221A4B1D600060EAA /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		872FC51921A4154A00E020ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8773954021A31A70000B032A /* he_ios_sdk.framework */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.framework; path = he_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8773954021A31A70000B032A /* he_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = he_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8773954321A31A70000B032A /* he_ios_sdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = he_ios_sdk.h; sourceTree = "<group>"; };
 		8773954421A31A70000B032A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8773954C21A31CB4000B032A /* BasicEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEditViewController.swift; sourceTree = "<group>"; };
-		8773954F21A31D89000B032A /* NSNotification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotification.Name.swift; sourceTree = "<group>"; };
-		87BF634521A33175006554A7 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,30 +52,13 @@
 		8773954221A31A70000B032A /* he_ios_sdk */ = {
 			isa = PBXGroup;
 			children = (
-				8773954E21A31D37000B032A /* extension */,
-				8773954B21A31B48000B032A /* view_controller */,
 				8773954321A31A70000B032A /* he_ios_sdk.h */,
+				872A8D9021A4B1CF00060EAA /* BasicEditViewController.swift */,
+				872A8D9221A4B1D600060EAA /* CameraViewController.swift */,
 				8773954421A31A70000B032A /* Info.plist */,
 				872FC51A21A4154A00E020ED /* Localizable.strings */,
 			);
 			path = he_ios_sdk;
-			sourceTree = "<group>";
-		};
-		8773954B21A31B48000B032A /* view_controller */ = {
-			isa = PBXGroup;
-			children = (
-				8773954C21A31CB4000B032A /* BasicEditViewController.swift */,
-				87BF634521A33175006554A7 /* CameraViewController.swift */,
-			);
-			path = view_controller;
-			sourceTree = "<group>";
-		};
-		8773954E21A31D37000B032A /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				8773954F21A31D89000B032A /* NSNotification.Name.swift */,
-			);
-			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8773955021A31D89000B032A /* NSNotification.Name.swift in Sources */,
-				87BF634621A33175006554A7 /* CameraViewController.swift in Sources */,
-				87B8221021A49D17001FFD80 /* BasicEditViewController.swift in Sources */,
+				872A8D9121A4B1CF00060EAA /* BasicEditViewController.swift in Sources */,
+				872A8D9321A4B1D600060EAA /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
