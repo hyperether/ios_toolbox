@@ -21,8 +21,8 @@ open class BasicEditViewController: UIViewController, UITextFieldDelegate, UISea
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(BasicEditViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(BasicEditViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(BasicEditViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(BasicEditViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         filedLastY = 0
         orginY = self.view.frame.origin.y
@@ -30,8 +30,8 @@ open class BasicEditViewController: UIViewController, UITextFieldDelegate, UISea
     }
     
     override open func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     open func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
