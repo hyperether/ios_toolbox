@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:he_ios_sdk.xcodeproj">
+      location = "self:toolbox.xcodeproj">
    </FileRef>
 </Workspace>
