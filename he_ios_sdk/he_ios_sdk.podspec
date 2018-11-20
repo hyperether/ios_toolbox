@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.description  = "Hyperether iOS SDK"
   spec.homepage     = "https://hyperether.com/"
   spec.license      = "MIT"
-  spec.author       = { "nebojsa" => "nbrankovic@hyperether.com", "nikola" => "qsnnikola@gmail.com"}
+  spec.author       = { "nebojsa" => "nbrankovic@hyperether.com"}
   spec.platform     = :ios, "12.1"
   spec.source       = { :git => "https://github.com/hyperether/ios_toolbox.git", :tag => "1.0.0" }
   spec.source_files = "he_ios_sdk"
