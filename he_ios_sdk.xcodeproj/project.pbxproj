@@ -10,7 +10,7 @@
 		872FC51821A4154A00E020ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 872FC51A21A4154A00E020ED /* Localizable.strings */; };
 		8773954521A31A70000B032A /* he_ios_sdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 8773954321A31A70000B032A /* he_ios_sdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8773955021A31D89000B032A /* NSNotification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773954F21A31D89000B032A /* NSNotification.Name.swift */; };
-		879F22CA21A325BC00822E23 /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773954C21A31CB4000B032A /* BasicEditViewController.swift */; };
+		87B8221021A49D17001FFD80 /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8773954C21A31CB4000B032A /* BasicEditViewController.swift */; };
 		87BF634621A33175006554A7 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BF634521A33175006554A7 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -161,8 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8773955021A31D89000B032A /* NSNotification.Name.swift in Sources */,
-				879F22CA21A325BC00822E23 /* BasicEditViewController.swift in Sources */,
 				87BF634621A33175006554A7 /* CameraViewController.swift in Sources */,
+				87B8221021A49D17001FFD80 /* BasicEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
