@@ -1,14 +1,14 @@
 //
 //  CameraViewController.swift
-//  toolbox
+//  HyperIOSToolbox
 //
-//  Created by nikola on 11/20/18.
+//  Created by nikola on 11/21/18.
 //  Copyright © 2018 hyperether. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-open class CameraViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+open class CameraViewController: BasicEditViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     public var picker: UIImagePickerController? = UIImagePickerController()
     
