@@ -33,9 +33,9 @@ open class CameraViewController: BasicEditViewController, UIImagePickerControlle
             picker!.cameraCaptureMode = .photo
             present(picker!, animated: true, completion: nil)
         }else{
-            let alertTitle = NSLocalizedString("alert.title", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,   comment:"")
-            let alertMessage = NSLocalizedString("alert.message", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,  comment:"")
-            let btnTitle = NSLocalizedString("btn.title", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,   comment:"")
+            let alertTitle = NSLocalizedString("alert.title", bundle: Bundle.toolboxBundle(),   comment:"")
+            let alertMessage = NSLocalizedString("alert.message", bundle: Bundle.toolboxBundle(),  comment:"")
+            let btnTitle = NSLocalizedString("btn.title", bundle: Bundle.toolboxBundle(),   comment:"")
             let alert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
             let ok = UIAlertAction(title: btnTitle, style:.default, handler: nil)
             alert.addAction(ok)
@@ -49,19 +49,19 @@ open class CameraViewController: BasicEditViewController, UIImagePickerControlle
         optionMenu.popoverPresentationController?.sourceView = self.view
         var title = ""
         
-        title = NSLocalizedString("alert.take.photo.title", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,  comment:"")
+        title = NSLocalizedString("alert.take.photo.title", bundle: Bundle.toolboxBundle(),  comment:"")
         
-        let takePhotoTitle = NSLocalizedString("alert.take.photo", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,  comment:"")
+        let takePhotoTitle = NSLocalizedString("alert.take.photo", bundle: Bundle.toolboxBundle(),  comment:"")
         let takePhoto = UIAlertAction(title: takePhotoTitle, style: .default) { (alert : UIAlertAction!) in
             self.openCamera()
         }
         
-        let sharePhotoTitle = NSLocalizedString("share.photo.title", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,  comment:"")
+        let sharePhotoTitle = NSLocalizedString("share.photo.title", bundle: Bundle.toolboxBundle(),  comment:"")
         let sharePhoto = UIAlertAction(title: sharePhotoTitle, style: .default) { (alert : UIAlertAction!) in
             self.openGallery()
         }
         
-        let cancelActionTitle = NSLocalizedString("action.cancel", bundle: Bundle.init(identifier: "com.hyperether.toolbox")!,  comment:"")
+        let cancelActionTitle = NSLocalizedString("action.cancel", bundle: Bundle.toolboxBundle(),  comment:"")
         let cancelAction = UIAlertAction(title: cancelActionTitle, style: .cancel) { (alert : UIAlertAction!) in
         }
         

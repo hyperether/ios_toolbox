@@ -10,7 +10,8 @@
 		879BC22C21A5583B007956CF /* HyperIOSToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 879BC22A21A5583B007956CF /* HyperIOSToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		879BC23321A5585C007956CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC23221A5585C007956CF /* CameraViewController.swift */; };
 		879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC23421A5586F007956CF /* BasicEditViewController.swift */; };
-		879BC23C21A55966007956CF /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 879BC23E21A55966007956CF /* Localized.strings */; };
+		CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */; };
+		CA18B71A21A55E2400B48551 /* HyperIOSToolbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,7 +20,8 @@
 		879BC22B21A5583B007956CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		879BC23221A5585C007956CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		879BC23421A5586F007956CF /* BasicEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEditViewController.swift; sourceTree = "<group>"; };
-		879BC23D21A55966007956CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolboxBundle.swift; sourceTree = "<group>"; };
+		CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HyperIOSToolbox.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,12 @@
 		879BC22921A5583B007956CF /* HyperIOSToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				879BC23E21A55966007956CF /* Localized.strings */,
+				CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */,
 				879BC23421A5586F007956CF /* BasicEditViewController.swift */,
 				879BC23221A5585C007956CF /* CameraViewController.swift */,
 				879BC22A21A5583B007956CF /* HyperIOSToolbox.h */,
 				879BC22B21A5583B007956CF /* Info.plist */,
+				CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */,
 			);
 			path = HyperIOSToolbox;
 			sourceTree = "<group>";
@@ -130,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				879BC23C21A55966007956CF /* Localized.strings in Resources */,
+				CA18B71A21A55E2400B48551 /* HyperIOSToolbox.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +144,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */,
 				879BC23321A5585C007956CF /* CameraViewController.swift in Sources */,
 				879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		879BC23E21A55966007956CF /* Localized.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				879BC23D21A55966007956CF /* en */,
-			);
-			name = Localized.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		879BC22D21A5583B007956CF /* Debug */ = {
@@ -196,6 +189,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -260,6 +254,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
