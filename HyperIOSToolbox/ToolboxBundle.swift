@@ -11,7 +11,7 @@ import Foundation
 public extension Bundle {
     
     class func toolboxBundle() -> Bundle {
-        let assetPath = Bundle(for: CameraViewController.self).resourcePath!
+        let assetPath = Bundle(for: self).resourcePath!
         return Bundle(path: NSString(string: assetPath).appendingPathComponent("HyperIOSToolbox.bundle"))!
     }
 }

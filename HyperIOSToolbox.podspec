@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 	spec.author       = { "Hyperether" => "info@hyperether.com"}
 	spec.platform     = :ios, "12.1"
 	spec.source       = { :git => "https://github.com/hyperether/ios_toolbox.git", :tag => "1.3.0" }
-	spec.source_files = "HyperIOSToolbox/*.swift"
+	spec.source_files = "HyperIOSToolbox/**/.{swift}"
 	spec.swift_version = "4.2"
     spec.resources    = 'HyperIOSToolbox/HyperIOSToolbox.bundle'
 end
