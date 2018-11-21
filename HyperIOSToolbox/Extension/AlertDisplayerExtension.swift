@@ -14,7 +14,7 @@ extension UIViewController {
     // Show error message.
     open func showError(message : String?) {
         DispatchQueue.main.async {
-            let alertController = UIAlertController(title: NSLocalizedString("alert.error.title", comment: ""), message: message, preferredStyle: .alert)
+            let alertController = UIAlertController(title: NSLocalizedString("alert.error.title", bundle: Bundle.toolboxBundle(),   comment: ""), message: message, preferredStyle: .alert)
             let action = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
             alertController.addAction(action)
             
@@ -25,8 +25,8 @@ extension UIViewController {
     // Show alert message with action on OK button.
     open func showAlert(message : String, in viewController: UIViewController, handler : ((_ success: Bool) -> Void)? = nil) {
         DispatchQueue.main.async {
-            let alertController = UIAlertController(title: NSLocalizedString("alert.title", comment: ""), message: message, preferredStyle: .alert)
-            let action = UIAlertAction(title: NSLocalizedString("alert.ok.action", comment: ""), style: .default){ (alertAction) -> Void in
+            let alertController = UIAlertController(title: NSLocalizedString("alert.title", bundle: Bundle.toolboxBundle(),   comment: ""), message: message, preferredStyle: .alert)
+            let action = UIAlertAction(title: NSLocalizedString("alert.ok.action", bundle: Bundle.toolboxBundle(),   comment: ""), style: .default){ (alertAction) -> Void in
                 if(handler != nil){
                     handler!(true)
                 }
@@ -41,7 +41,7 @@ extension UIViewController {
     open func showMessage(message : String, in viewController: UIViewController, handler : ((_ success: Bool) -> Void)?) {
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: "", message: message, preferredStyle: .alert)
-            let action = UIAlertAction(title: NSLocalizedString("alert.ok.action", comment: ""), style: .default){ (alertAction) -> Void in
+            let action = UIAlertAction(title: NSLocalizedString("alert.ok.action", bundle: Bundle.toolboxBundle(),    comment: ""), style: .default){ (alertAction) -> Void in
                 if(handler != nil){
                     handler!(true)
                 }
@@ -56,13 +56,13 @@ extension UIViewController {
     open func showDialog(title: String?, message : String, in viewController: UIViewController, handler : ((_ success: Bool) -> Void)?) {
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-            let actionYes = UIAlertAction(title: NSLocalizedString("alert.yes.action", comment: ""), style: .default){ (alertAction) -> Void in
+            let actionYes = UIAlertAction(title: NSLocalizedString("alert.yes.action", bundle: Bundle.toolboxBundle(),   comment: ""), style: .default){ (alertAction) -> Void in
                 if(handler != nil){
                     handler!(true)
                 }
             }
             
-            let actionNo = UIAlertAction(title: NSLocalizedString("alert.no.action", comment: ""), style: .default){ (alertAction) -> Void in
+            let actionNo = UIAlertAction(title: NSLocalizedString("alert.no.action", bundle: Bundle.toolboxBundle(),   comment: ""), style: .default){ (alertAction) -> Void in
                 if(handler != nil){
                     handler!(false)
                 }
@@ -81,7 +81,7 @@ extension UIViewController {
             let appSettings = URL(string: UIApplication.openSettingsURLString)
             UIApplication.shared.open(appSettings!, options: [:], completionHandler: nil)
         })
-        let cancelAction = UIAlertAction(title: NSLocalizedString("alert.cancel.action", comment: ""), style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("alert.cancel.action", bundle: Bundle.toolboxBundle(),   comment: ""), style: .cancel, handler: nil)
         alert.addAction(settingsAction)
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
@@ -91,7 +91,7 @@ extension UIViewController {
     open func showDestructivePrompt(title: String?, buttonTitle: String, handler: @escaping ((_ action: UIAlertAction) -> ())) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
         let destroyAction = UIAlertAction(title: buttonTitle, style: .destructive, handler: handler)
-        let cancelAction = UIAlertAction(title: NSLocalizedString("alert.cancel.action", comment: ""), style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: NSLocalizedString("alert.cancel.action", bundle: Bundle.toolboxBundle(),   comment: ""), style: .cancel, handler: nil)
         alert.addAction(destroyAction)
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
