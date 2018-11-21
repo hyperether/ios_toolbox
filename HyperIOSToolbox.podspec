@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 	spec.summary      = "Hyperether iOS toolbox"
 	spec.description  = "This is a toolbox created to make iOS-development easier and to prevent adding of reddudant code."
 	spec.homepage     = "https://hyperether.com/"
-	spec.license      = "MIT"
+	spec.license      = { :type => 'MIT', :file => 'HyperIOSToolbox/LICENSE' }
 	spec.author       = { "Hyperether" => "info@hyperether.com"}
 	spec.platform     = :ios, "12.1"
 	spec.source       = { :git => "https://github.com/hyperether/ios_toolbox.git", :tag => "1.1.0" }
