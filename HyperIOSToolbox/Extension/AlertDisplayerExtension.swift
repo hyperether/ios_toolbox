@@ -15,7 +15,7 @@ extension UIViewController {
     open func showError(message : String?) {
         DispatchQueue.main.async {
             let alertController = UIAlertController(title: NSLocalizedString("alert.error.title", bundle: Bundle.toolboxBundle(),   comment: ""), message: message, preferredStyle: .alert)
-            let action = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default, handler: nil)
+            let action = UIAlertAction(title: NSLocalizedString("alert.ok.action", bundle: Bundle.toolboxBundle(), comment: ""), style: .default, handler: nil)
             alertController.addAction(action)
             
             self.present(alertController, animated: true, completion: nil)
