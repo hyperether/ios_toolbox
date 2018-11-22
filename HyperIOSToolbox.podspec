@@ -11,5 +11,5 @@ Pod::Spec.new do |spec|
 	spec.source_files = "HyperIOSToolbox/**/*.{swift}"
 	spec.swift_version = "4.2"
     	spec.resources    = 'HyperIOSToolbox/HyperIOSToolbox.bundle'
-	spec.dependency   = 'ReachabilitySwift'
+	spec.dependency 'ReachabilitySwift'
 end
