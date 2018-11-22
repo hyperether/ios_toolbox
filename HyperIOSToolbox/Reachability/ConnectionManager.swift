@@ -9,7 +9,7 @@
 import Foundation
 import Reachability
 
-class ConnectionManager: NSObject {
+open class ConnectionManager: NSObject {
     
     static  let shared = ConnectionManager()
     

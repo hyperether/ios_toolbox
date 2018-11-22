@@ -9,9 +9,9 @@
 import UIKit
 import Reachability
 
-class NetworkListenerController: UIViewController, NetworkStatusListener {
+open class NetworkListenerController: UIViewController, NetworkStatusListener {
     
-    func networkStatusDidChange(status: Reachability.Connection) {
+    open func networkStatusDidChange(status: Reachability.Connection) {
         switch status {
         case .none:
             debugPrint("Network became unreachable")
@@ -22,12 +22,12 @@ class NetworkListenerController: UIViewController, NetworkStatusListener {
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         ConnectionManager.shared.addListener(listener: self)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         ConnectionManager.shared.removeListener(listener: self)
     }

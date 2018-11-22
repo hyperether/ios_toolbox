@@ -74,7 +74,7 @@ extension UIViewController {
         }
     }
     
-    /// Will show a prompt to bring user into system settings.
+    // Will show a prompt to bring user into system settings.
     open func showPromptForSystemSettings(title: String, actionTitle: String) {
         let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
         let settingsAction = UIAlertAction(title: actionTitle, style: .default, handler: { (action: UIAlertAction) -> Void in
