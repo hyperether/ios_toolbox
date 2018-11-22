@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8704BBC721A6A7F20068CCF5 /* NetworkListenerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBC621A6A7F20068CCF5 /* NetworkListenerController.swift */; };
+		8704BBC921A6A8600068CCF5 /* NetworkStatusListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBC821A6A8600068CCF5 /* NetworkStatusListener.swift */; };
+		8704BBCB21A6A9940068CCF5 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBCA21A6A9940068CCF5 /* ConnectionManager.swift */; };
 		879BC22C21A5583B007956CF /* HyperIOSToolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = 879BC22A21A5583B007956CF /* HyperIOSToolbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		879BC23321A5585C007956CF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC23221A5585C007956CF /* CameraViewController.swift */; };
 		879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC23421A5586F007956CF /* BasicEditViewController.swift */; };
 		879BC24421A5828B007956CF /* AlertDisplayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC24321A5828B007956CF /* AlertDisplayerExtension.swift */; };
 		CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */; };
 		CA18B71A21A55E2400B48551 /* HyperIOSToolbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */; };
+		EDB106FF27A2ADABA44C43D7 /* Pods_HyperIOSToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperIOSToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8704BBC621A6A7F20068CCF5 /* NetworkListenerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkListenerController.swift; sourceTree = "<group>"; };
+		8704BBC821A6A8600068CCF5 /* NetworkStatusListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatusListener.swift; sourceTree = "<group>"; };
+		8704BBCA21A6A9940068CCF5 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 		879BC22721A5583B007956CF /* HyperIOSToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HyperIOSToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		879BC22A21A5583B007956CF /* HyperIOSToolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyperIOSToolbox.h; sourceTree = "<group>"; };
 		879BC22B21A5583B007956CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		879BC23221A5585C007956CF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		879BC23421A5586F007956CF /* BasicEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicEditViewController.swift; sourceTree = "<group>"; };
 		879BC24321A5828B007956CF /* AlertDisplayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDisplayerExtension.swift; sourceTree = "<group>"; };
+		8BAB2EE993685288E7DF34D5 /* Pods-HyperIOSToolbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperIOSToolbox.debug.xcconfig"; path = "Target Support Files/Pods-HyperIOSToolbox/Pods-HyperIOSToolbox.debug.xcconfig"; sourceTree = "<group>"; };
 		CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolboxBundle.swift; sourceTree = "<group>"; };
 		CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HyperIOSToolbox.bundle; sourceTree = "<group>"; };
+		D74744C8B973B638F46581AB /* Pods-HyperIOSToolbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperIOSToolbox.release.xcconfig"; path = "Target Support Files/Pods-HyperIOSToolbox/Pods-HyperIOSToolbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB106FF27A2ADABA44C43D7 /* Pods_HyperIOSToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33D1FF2466817918D2D595B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BAB2EE993685288E7DF34D5 /* Pods-HyperIOSToolbox.debug.xcconfig */,
+				D74744C8B973B638F46581AB /* Pods-HyperIOSToolbox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8704BBC521A6A5050068CCF5 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				8704BBC621A6A7F20068CCF5 /* NetworkListenerController.swift */,
+				8704BBC821A6A8600068CCF5 /* NetworkStatusListener.swift */,
+				8704BBCA21A6A9940068CCF5 /* ConnectionManager.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		879BC21D21A5583B007956CF = {
 			isa = PBXGroup;
 			children = (
 				879BC22921A5583B007956CF /* HyperIOSToolbox */,
 				879BC22821A5583B007956CF /* Products */,
+				33D1FF2466817918D2D595B5 /* Pods */,
+				90DC38DFD10A8753EFA74743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +88,7 @@
 		879BC22921A5583B007956CF /* HyperIOSToolbox */ = {
 			isa = PBXGroup;
 			children = (
+				8704BBC521A6A5050068CCF5 /* Reachability */,
 				879BC24121A57ECC007956CF /* Extension */,
 				879BC24021A57EBD007956CF /* Basic */,
 				879BC23F21A57EA2007956CF /* Camera */,
@@ -91,6 +124,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		90DC38DFD10A8753EFA74743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 879BC22F21A5583B007956CF /* Build configuration list for PBXNativeTarget "HyperIOSToolbox" */;
 			buildPhases = (
+				F7334B98BDF0E9C60CF731D2 /* [CP] Check Pods Manifest.lock */,
 				879BC22221A5583B007956CF /* Headers */,
 				879BC22321A5583B007956CF /* Sources */,
 				879BC22421A5583B007956CF /* Frameworks */,
@@ -166,12 +208,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F7334B98BDF0E9C60CF731D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HyperIOSToolbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		879BC22321A5583B007956CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8704BBC721A6A7F20068CCF5 /* NetworkListenerController.swift in Sources */,
 				CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */,
+				8704BBC921A6A8600068CCF5 /* NetworkStatusListener.swift in Sources */,
+				8704BBCB21A6A9940068CCF5 /* ConnectionManager.swift in Sources */,
 				879BC23321A5585C007956CF /* CameraViewController.swift in Sources */,
 				879BC24421A5828B007956CF /* AlertDisplayerExtension.swift in Sources */,
 				879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */,
@@ -307,6 +377,7 @@
 		};
 		879BC23021A5583B007956CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAB2EE993685288E7DF34D5 /* Pods-HyperIOSToolbox.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -334,6 +405,7 @@
 		};
 		879BC23121A5583B007956CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74744C8B973B638F46581AB /* Pods-HyperIOSToolbox.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
