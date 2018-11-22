@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class BasicEditViewController: UIViewController {
+open class BasicEditViewController: NetworkListenerController {
 
     var filedLastY : CGFloat = 0
     var orginY : CGFloat = 0
