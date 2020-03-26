@@ -33,19 +33,19 @@ open class ConnectionManager: NSObject {
     
     // Get network status.
     var isNetworkAvailable : Bool {
-        return reachabilityStatus != .none
+        return reachabilityStatus != .unavailable
     }
     
-    var reachabilityStatus: Reachability.Connection = .none
+    var reachabilityStatus: Reachability.Connection = .unavailable
     
-    let reachability = Reachability()!
+    let reachability = try! Reachability()
     
     // Track reachabilty state. Selector for observer.
     @objc func reachabilityChanged(notification: Notification) {
         let reachability = notification.object as! Reachability
         debugPrint("Connection changed !!!!!")
         switch reachability.connection {
-        case .none:
+        case .none, .unavailable:
             debugPrint("Network became unreachable")
         case .wifi:
             if(reachabilityStatus == .cellular){
@@ -68,7 +68,7 @@ open class ConnectionManager: NSObject {
     // Add listener to listeners array.
     func addListener(listener: NetworkStatusListener){
         listeners.append(listener)
-        if(reachabilityStatus == .none){
+        if(reachabilityStatus == .unavailable){
             listener.networkStatusDidChange(status: reachabilityStatus)
         }
     }

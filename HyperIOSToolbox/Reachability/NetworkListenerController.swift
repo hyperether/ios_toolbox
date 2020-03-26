@@ -13,7 +13,7 @@ open class NetworkListenerController: UIViewController, NetworkStatusListener {
     
     open func networkStatusDidChange(status: Reachability.Connection) {
         switch status {
-        case .none:
+        case .none, .unavailable:
             debugPrint("Network became unreachable")
         case .wifi:
             debugPrint("Network reachable through WiFi")
