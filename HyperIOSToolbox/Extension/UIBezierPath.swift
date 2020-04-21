@@ -2,7 +2,7 @@
 //  UIBezierPath.swift
 //  HyperIOSToolbox
 //
-//  Created by Sinisa Civcic on 16/04/2020.
+//  Created by Sinisa on 16/04/2020.
 //
 
 import Foundation

@@ -9,6 +9,15 @@ import Foundation
 
 public extension UIViewController {
     
+    func makeTransparent(withTint tint: UIColor = .systemBlue) {
+        guard let navBar = navigationController?.navigationBar else { return }
+        navBar.setBackgroundImage(UIImage(), for: .default)
+        navBar.shadowImage = UIImage()
+        navBar.isTranslucent = true
+        navBar.tintColor = tint
+        navBar.titleTextAttributes = [.foregroundColor: tint]
+    }
+    
     func setDoubleLineTitleView(line1: String, line2: String, font: UIFont = UIFont.systemFont(ofSize: 12, weight: UIFont.Weight.medium)){
         guard let navBar = navigationController?.navigationBar else { return }
         var titleLabel = navigationItem.titleView as? UILabel
@@ -38,6 +47,69 @@ public extension UIViewController {
         titleLabel!.attributedText = attributed
         
     }
+    
+    func show(_ viewController: UIViewController) {
+        navigationController?.show(viewController, sender: self)
+    }
+    
+    func backToPrevious(animated: Bool = true) {
+        if let presentingViewController = presentingViewController {
+            presentingViewController.dismiss(animated: animated, completion: nil)
+        } else {
+            _ = navigationController?.popViewController(animated: animated)
+        }
+    }
+    
+    func backToRoot(animated: Bool = true) {
+        if let presentingViewController = presentingViewController {
+            presentingViewController.dismiss(animated: animated, completion: nil)
+        } else {
+            _ = navigationController?.popToRootViewController(animated: animated)
+        }
+    }
+    
+    func present(_ viewControllerToPresent: UIViewController, completion: @escaping (() -> ())) {
+        present(viewControllerToPresent, animated: true, completion: completion)
+    }
+    
+    func present(_ viewControllerToPresent: UIViewController) {
+        present(viewControllerToPresent, animated: true, completion: nil)
+    }
+    
+    func presentWithStyle(_ viewController: UIViewController, modalTransitionStyle: UIModalTransitionStyle = .coverVertical, animated flag: Bool = true, completion: (() -> ())? = nil) {
+        viewController.modalPresentationStyle = .custom
+        viewController.modalTransitionStyle =  modalTransitionStyle
+        // Very important
+        view.window?.rootViewController?.modalPresentationStyle = .fullScreen
+        present(viewController, animated: flag, completion: completion)
+    }
+    
+    func dismiss(completion: (() -> Void)? = nil) {
+        presentingViewController?.dismiss(animated: true, completion: completion)
+    }
+    
+    func dismissToTop(animated: Bool = true, completion: (() -> Void)? = nil) {
+        var presentedViewController = self
+        while let presentingViewController = presentedViewController.presentingViewController {
+            presentedViewController = presentingViewController
+        }
+        presentedViewController.dismiss(animated: animated, completion: completion)
+    }
+    
+    func add(_ child: UIViewController) {
+        willMove(toParent: self)
+        addChild(child)
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
+
+    func remove() {
+        guard parent != nil else { return }
+        willMove(toParent: nil)
+        view.removeFromSuperview()
+        removeFromParent()
+    }
+    
 }
 
 
