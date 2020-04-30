@@ -111,12 +111,3 @@ public extension UIViewController {
     }
     
 }
-
-
-extension String {
-    
-    func range(of substring: String) -> NSRange {
-      let nsString = self as NSString
-      return nsString.range(of: substring)
-    }
-}
