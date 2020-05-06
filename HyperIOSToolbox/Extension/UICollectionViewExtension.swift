@@ -10,11 +10,11 @@ import UIKit
 
 public extension UICollectionView {
     func registerReusableCell<T: UICollectionViewCell>(_: T.Type) where T: Reusable {
-        if let nib = T.nib {
-            self.register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
-        } else {
-            self.register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
-        }
+        self.register(T.self, forCellWithReuseIdentifier: T.reuseIdentifier)
+    }
+    
+    func registerNIbReusableCell<T: UICollectionViewCell>(_: T.Type) where T: NibReusable {
+        self.register(T.nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
     
     func dequeueReusableCell<T: UICollectionViewCell>(indexPath: IndexPath) -> T where T: Reusable {
@@ -22,11 +22,11 @@ public extension UICollectionView {
     }
     
     func registerReusableSupplementaryView<T: Reusable>(elementKind: String, _: T.Type) {
-        if let nib = T.nib {
-            self.register(nib, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
-        } else {
-            self.register(T.self, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
-        }
+        self.register(T.self, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
+    }
+    
+    func registerNibReusableSupplementaryView<T: NibReusable>(elementKind: String, _: T.Type) {
+        self.register(T.nib, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: T.reuseIdentifier)
     }
     
     func dequeueReusableSupplementaryView<T: UICollectionViewCell>(elementKind: String, indexPath: IndexPath) -> T where T: Reusable {
