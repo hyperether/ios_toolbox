@@ -17,6 +17,22 @@
 		879BC24421A5828B007956CF /* AlertDisplayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879BC24321A5828B007956CF /* AlertDisplayerExtension.swift */; };
 		CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */; };
 		CA18B71A21A55E2400B48551 /* HyperIOSToolbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */; };
+		CAEBC813246BE249007F4992 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC805246BE249007F4992 /* DateExtension.swift */; };
+		CAEBC814246BE249007F4992 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC806246BE249007F4992 /* UIImageExtension.swift */; };
+		CAEBC815246BE249007F4992 /* LocaleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC807246BE249007F4992 /* LocaleExtension.swift */; };
+		CAEBC816246BE249007F4992 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC808246BE249007F4992 /* UINavigationControllerExtension.swift */; };
+		CAEBC817246BE249007F4992 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC809246BE249007F4992 /* UIBezierPath.swift */; };
+		CAEBC818246BE249007F4992 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC80A246BE249007F4992 /* UITableViewExtension.swift */; };
+		CAEBC819246BE249007F4992 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC80B246BE249007F4992 /* UIDeviceExtension.swift */; };
+		CAEBC81B246BE249007F4992 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC80D246BE249007F4992 /* CALayerExtension.swift */; };
+		CAEBC81C246BE249007F4992 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC80E246BE249007F4992 /* UIStoryboardExtension.swift */; };
+		CAEBC81D246BE249007F4992 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC80F246BE249007F4992 /* UIViewControllerExtension.swift */; };
+		CAEBC81E246BE249007F4992 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC810246BE249007F4992 /* StringExtension.swift */; };
+		CAEBC81F246BE249007F4992 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC811246BE249007F4992 /* UIApplicationExtension.swift */; };
+		CAEBC820246BE249007F4992 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC812246BE249007F4992 /* UIViewExtension.swift */; };
+		CAEBC822246BE40F007F4992 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC821246BE40F007F4992 /* UICollectionViewExtension.swift */; };
+		CAEBC82A246BE80C007F4992 /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC828246BE80C007F4992 /* NibReusable.swift */; };
+		CAEBC82B246BE80C007F4992 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEBC829246BE80C007F4992 /* Reusable.swift */; };
 		EDB106FF27A2ADABA44C43D7 /* Pods_HyperIOSToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +51,22 @@
 		8BAB2EE993685288E7DF34D5 /* Pods-HyperIOSToolbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperIOSToolbox.debug.xcconfig"; path = "Target Support Files/Pods-HyperIOSToolbox/Pods-HyperIOSToolbox.debug.xcconfig"; sourceTree = "<group>"; };
 		CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolboxBundle.swift; sourceTree = "<group>"; };
 		CA18B71921A55E2400B48551 /* HyperIOSToolbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HyperIOSToolbox.bundle; sourceTree = "<group>"; };
+		CAEBC805246BE249007F4992 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		CAEBC806246BE249007F4992 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		CAEBC807246BE249007F4992 /* LocaleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocaleExtension.swift; sourceTree = "<group>"; };
+		CAEBC808246BE249007F4992 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		CAEBC809246BE249007F4992 /* UIBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		CAEBC80A246BE249007F4992 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		CAEBC80B246BE249007F4992 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		CAEBC80D246BE249007F4992 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		CAEBC80E246BE249007F4992 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		CAEBC80F246BE249007F4992 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		CAEBC810246BE249007F4992 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CAEBC811246BE249007F4992 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		CAEBC812246BE249007F4992 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		CAEBC821246BE40F007F4992 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		CAEBC828246BE80C007F4992 /* NibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
+		CAEBC829246BE80C007F4992 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D74744C8B973B638F46581AB /* Pods-HyperIOSToolbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HyperIOSToolbox.release.xcconfig"; path = "Target Support Files/Pods-HyperIOSToolbox/Pods-HyperIOSToolbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +135,7 @@
 				879BC24121A57ECC007956CF /* Extension */,
 				879BC24021A57EBD007956CF /* Basic */,
 				879BC23F21A57EA2007956CF /* Camera */,
+				CAEBC827246BE7E3007F4992 /* Protocols */,
 				CA18B71721A55DFD00B48551 /* ToolboxBundle.swift */,
 				879BC22A21A5583B007956CF /* HyperIOSToolbox.h */,
 				879BC22B21A5583B007956CF /* Info.plist */,
@@ -130,6 +163,20 @@
 		879BC24121A57ECC007956CF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CAEBC821246BE40F007F4992 /* UICollectionViewExtension.swift */,
+				CAEBC80D246BE249007F4992 /* CALayerExtension.swift */,
+				CAEBC805246BE249007F4992 /* DateExtension.swift */,
+				CAEBC807246BE249007F4992 /* LocaleExtension.swift */,
+				CAEBC810246BE249007F4992 /* StringExtension.swift */,
+				CAEBC811246BE249007F4992 /* UIApplicationExtension.swift */,
+				CAEBC809246BE249007F4992 /* UIBezierPath.swift */,
+				CAEBC80B246BE249007F4992 /* UIDeviceExtension.swift */,
+				CAEBC806246BE249007F4992 /* UIImageExtension.swift */,
+				CAEBC808246BE249007F4992 /* UINavigationControllerExtension.swift */,
+				CAEBC80E246BE249007F4992 /* UIStoryboardExtension.swift */,
+				CAEBC80A246BE249007F4992 /* UITableViewExtension.swift */,
+				CAEBC80F246BE249007F4992 /* UIViewControllerExtension.swift */,
+				CAEBC812246BE249007F4992 /* UIViewExtension.swift */,
 				879BC24321A5828B007956CF /* AlertDisplayerExtension.swift */,
 			);
 			path = Extension;
@@ -141,6 +188,15 @@
 				13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAEBC827246BE7E3007F4992 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CAEBC828246BE80C007F4992 /* NibReusable.swift */,
+				CAEBC829246BE80C007F4992 /* Reusable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,14 +306,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEBC822246BE40F007F4992 /* UICollectionViewExtension.swift in Sources */,
+				CAEBC819246BE249007F4992 /* UIDeviceExtension.swift in Sources */,
 				8704BBC721A6A7F20068CCF5 /* NetworkListenerController.swift in Sources */,
+				CAEBC820246BE249007F4992 /* UIViewExtension.swift in Sources */,
+				CAEBC815246BE249007F4992 /* LocaleExtension.swift in Sources */,
 				CA18B71821A55DFD00B48551 /* ToolboxBundle.swift in Sources */,
+				CAEBC81C246BE249007F4992 /* UIStoryboardExtension.swift in Sources */,
 				8704BBC921A6A8600068CCF5 /* NetworkStatusListener.swift in Sources */,
+				CAEBC82A246BE80C007F4992 /* NibReusable.swift in Sources */,
+				CAEBC814246BE249007F4992 /* UIImageExtension.swift in Sources */,
 				8704BBCB21A6A9940068CCF5 /* ConnectionManager.swift in Sources */,
+				CAEBC817246BE249007F4992 /* UIBezierPath.swift in Sources */,
+				CAEBC82B246BE80C007F4992 /* Reusable.swift in Sources */,
+				CAEBC813246BE249007F4992 /* DateExtension.swift in Sources */,
 				879BC23321A5585C007956CF /* CameraViewController.swift in Sources */,
 				879BC24421A5828B007956CF /* AlertDisplayerExtension.swift in Sources */,
+				CAEBC81F246BE249007F4992 /* UIApplicationExtension.swift in Sources */,
+				CAEBC81E246BE249007F4992 /* StringExtension.swift in Sources */,
 				4DB2577E242CD8FD00B38046 /* Languages.swift in Sources */,
 				879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */,
+				CAEBC816246BE249007F4992 /* UINavigationControllerExtension.swift in Sources */,
+				CAEBC81D246BE249007F4992 /* UIViewControllerExtension.swift in Sources */,
+				CAEBC818246BE249007F4992 /* UITableViewExtension.swift in Sources */,
+				CAEBC81B246BE249007F4992 /* CALayerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
