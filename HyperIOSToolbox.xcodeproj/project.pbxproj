@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DB2577E242CD8FD00B38046 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2577D242CD8FD00B38046 /* Localizable.swift */; };
+		4DB2577E242CD8FD00B38046 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB2577D242CD8FD00B38046 /* Languages.swift */; };
 		8704BBC721A6A7F20068CCF5 /* NetworkListenerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBC621A6A7F20068CCF5 /* NetworkListenerController.swift */; };
 		8704BBC921A6A8600068CCF5 /* NetworkStatusListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBC821A6A8600068CCF5 /* NetworkStatusListener.swift */; };
 		8704BBCB21A6A9940068CCF5 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704BBCA21A6A9940068CCF5 /* ConnectionManager.swift */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		13598A1F197DD1E15FEBE098 /* Pods_HyperIOSToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HyperIOSToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DB2577D242CD8FD00B38046 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		4DB2577D242CD8FD00B38046 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		8704BBC621A6A7F20068CCF5 /* NetworkListenerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkListenerController.swift; sourceTree = "<group>"; };
 		8704BBC821A6A8600068CCF5 /* NetworkStatusListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatusListener.swift; sourceTree = "<group>"; };
 		8704BBCA21A6A9940068CCF5 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
@@ -59,12 +59,12 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4DB2577C242CD4EB00B38046 /* Localization */ = {
+		4DB2577C242CD4EB00B38046 /* Languages */ = {
 			isa = PBXGroup;
 			children = (
-				4DB2577D242CD8FD00B38046 /* Localizable.swift */,
+				4DB2577D242CD8FD00B38046 /* Languages.swift */,
 			);
-			path = Localization;
+			path = Languages;
 			sourceTree = "<group>";
 		};
 		8704BBC521A6A5050068CCF5 /* Reachability */ = {
@@ -98,7 +98,7 @@
 		879BC22921A5583B007956CF /* HyperIOSToolbox */ = {
 			isa = PBXGroup;
 			children = (
-				4DB2577C242CD4EB00B38046 /* Localization */,
+				4DB2577C242CD4EB00B38046 /* Languages */,
 				8704BBC521A6A5050068CCF5 /* Reachability */,
 				879BC24121A57ECC007956CF /* Extension */,
 				879BC24021A57EBD007956CF /* Basic */,
@@ -256,7 +256,7 @@
 				8704BBCB21A6A9940068CCF5 /* ConnectionManager.swift in Sources */,
 				879BC23321A5585C007956CF /* CameraViewController.swift in Sources */,
 				879BC24421A5828B007956CF /* AlertDisplayerExtension.swift in Sources */,
-				4DB2577E242CD8FD00B38046 /* Localizable.swift in Sources */,
+				4DB2577E242CD8FD00B38046 /* Languages.swift in Sources */,
 				879BC23521A5586F007956CF /* BasicEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
