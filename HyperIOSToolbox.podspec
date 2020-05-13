@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
 	spec.homepage     = "https://hyperether.com/"
 	spec.license      = { :type => 'MIT', :file => 'HyperIOSToolbox/LICENSE' }
 	spec.author       = { "Hyperether" => "info@hyperether.com"}
-	spec.platform     = :ios, "12.1"
+	spec.platform     = :ios, "12.0"
 	spec.source       = { :git => "https://github.com/hyperether/ios_toolbox.git", :tag => "1.8.0" }
 	spec.source_files = "HyperIOSToolbox/**/*.{swift}"
 	spec.swift_version = "5"
